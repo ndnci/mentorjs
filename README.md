@@ -80,12 +80,12 @@ new MentorJS().steps([
 | showArrow | true, false | true
 | outsideClick | true, false | false | Detect outside click for close modal
 | targetAutoShow | true, false | false | If target is hidden by default, you can set it to true
-| margin | number | 10 | space between modal and target, only number, max 10 recommended, if you customise the arrow style, you should add arrow width too
+| margin | number | 10 | Space between modal and target, only number, max 10 recommended
 | horizontal | left, center, right, auto | auto
 | vertical | top, center, bottom, auto | auto
 | responsive | true, false | true
-| wait | time ( ms ) | 0 | Wait time ( for actual modal ) when user click to next or previous button default is 0 for modal speed, but if previous or next modal is near of actual modal, you can get a problem with click (touchstart)  on mobile devices, if you added "touchstart" event and have this problem on mobile, you can change it, the recommended value is "300", modal will be faster on mobile and large screen and you will not have a problem with button clicks (touchstart)
-| events | javascript events | click | You can define events with space " " for listener function, for exemple : "click touchstart mouseover" etc.
+| wait | time ( ms ) | 0 | Wait time ( for actual modal ) when user click to next or previous button default is 0 for modal speed
+| events | javascript events | click | You can define events with space " " for listener function, for exemple : "click touchstart"
 | mobileSupport | true, false | true
 
 ## Functions
