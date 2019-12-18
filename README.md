@@ -37,14 +37,14 @@ new MentorJS().steps([
 ## Settings
 
 | Name | Parameters | Default | Description
-| ------------- | ------------------------------ |
+| ------------- | --------------- | ------------- | ------------- |
 | autoRun | true, false | true | By default script run automatically
 | stepFrom | step index | 0  | Any existing step
 
 ## Options
 
 | Name | Parameters | Default | Description
-| ------------- | ------------------------------ |
+| ------------- | ------------ | ------------- | ------------- |
 | theme | dark, light | light
 | animation | zoom, pulse, bounce, toLeft, toRight, toTop, toBottom | null
 | backgroundArea | any selector | document.querySelector("body")
