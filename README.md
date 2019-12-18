@@ -38,7 +38,7 @@ new MentorJS().steps([
 
 | Name | Parameters | Default | Description
 | ------------- | ------------------------------ |
-| autoRun | true, false | true
+| autoRun | true, false | true | By default script run automatically
 | stepFrom | step index | 0  | Any existing step
 
 ## Options
