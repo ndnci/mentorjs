@@ -41,51 +41,51 @@ new MentorJS().steps([
 ```javascript
 new MentorJS().steps([
                 {
-					target: "#test",
-                    title: "Hello World !",
-                    message: "Your message",
+		target: "#test",
+		title: "Hello World !",
+		message: "Your message",
                 }]);
 ```
 ###### With multiple steps
 ```javascript
 new MentorJS().steps([
                 {
-                    title: "Hello World !",
-                    message: "Your message",
+		title: "Hello World !",
+		message: "Your message",
                 },
-				{
-                    title: "Second test !",
-                    message: "Second message",
+		{	
+		title: "Second test !",
+		message: "Second message",
                 }]);
 ```
 ###### With specific paremeters for each step
 ```javascript
 new MentorJS().steps([
                 {
-					theme: "dark",
-					closeButton: "true",
-                    title: "Hello World !",
-                    message: "Your message",
+		theme: "dark",
+		closeButton: "true",
+		title: "Hello World !",
+	    	message: "Your message",
                 },
-				{
-					theme: "light",
-                    message: "Without title !",
+		{
+		theme: "light",
+	   	message: "Without title !",
                 }]);
 ```
 ###### With general paremeters
 ```javascript
 new MentorJS({
-					theme: "dark",
-				})
-				.steps([
+		theme: "dark",
+		})
+		.steps([
                 {
-                    title: "Hello World !",
-                    message: "Your message",
+		title: "Hello World !",
+	    	message: "Your message",
                 },
-				{
-					/* it will overwrite constructor value for this step */
-					theme: "light",
-                    message: "Without title !",
+		{
+		/* it will overwrite constructor value for this step */
+		theme: "light",
+		message: "Without title !",
                 }]);
 ```
 
