@@ -28,11 +28,17 @@ Extract js and css
 
 ###### Basic
 ```javascript
+<script>
+// don't forget to load MentorJS after all loaded contents
+window.addEventListener('load', function () {
+
 new MentorJS().steps([
                 {
                     title: "Hello World !",
                     message: "Your message",
                 }]);
+});
+</script>
 ```
 ###### With target
 ```html
