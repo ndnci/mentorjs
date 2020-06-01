@@ -3,9 +3,15 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
+const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 
-// sass compiler
+// OPTIONS
+var autoprefixerOptions = {
+    // overrideBrowserslist: ['last 10 versions'] // already written in package.json
+};
+
+// style files compiler
 function style() {
     // 1. where is my scss file
     return gulp.src('./assets/scss/**/*.scss')
@@ -13,6 +19,8 @@ function style() {
         .pipe(sourcemaps.init())
     // 2.1 pass that file through sass compiler
         .pipe(sass())
+    // 2.1.1 autoprefixer filter
+        .pipe(autoprefixer(autoprefixerOptions))
     // 2.2 concat files with custom name
         .pipe(concat('mentor.css'))
     // 2.3 write sourcemaps file
@@ -23,7 +31,7 @@ function style() {
         .pipe(browserSync.stream());
 }
 
-// babel compiler
+// javascript files compiler
 function javascript() {
     // 1. where is my js file
     return gulp.src('./assets/js/**/*.js')
