@@ -1,0 +1,32 @@
+{
+  "name": "mentorjs",
+  "version": "1.0.0",
+  "description": "JavaScript user guiding and tutorial library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndnci/mentorjs.git"
+  },
+  "keywords": [
+    "mentorjs",
+    "user",
+    "guide",
+    "step",
+    "by",
+    "step"
+  ],
+  "author": "NDNCI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndnci/mentorjs/issues"
+  },
+  "homepage": "https://github.com/ndnci/mentorjs#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
