@@ -1,5 +1,5 @@
 {
-  "name": "mentorjs",
+  "name": "@ndnci/mentorjs",
   "version": "1.0.0",
   "description": "JavaScript user guiding and tutorial library",
   "main": "index.js",
