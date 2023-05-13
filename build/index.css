@@ -1,6 +1,6 @@
 /*!
  * 
- *   @ndnci/mentorjs v2.0.0
+ *   @ndnci/mentorjs v2.0.1
  *   git+https://github.com/ndnci/mentorjs.git
  *
  *   Copyright (c) NDNCI
