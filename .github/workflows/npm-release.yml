@@ -1,0 +1,39 @@
+name: Release Workflow
+on:
+    push:
+        tags:
+            - "v*" # Only tag pushes matching v*, e.g. v1.0.0
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "16.x"
+                  registry-url: "https://registry.npmjs.org"
+
+            - name: Get latest tag
+              id: get_tag
+              run: echo ::set-output name=tag::$(git describe --tags --abbrev=0)
+
+            - name: Bump version & push
+              run: |
+                  git config --global user.name 'Automated publish'
+                  git config --global user.email '$YOUR_USERNAME@users.noreply.github.com'
+
+                  # Extract the version number from the tag:
+                  export TAG_VERSION=$(echo "${{ steps.get_tag.outputs.tag }}" | sed -n 's/v\([0-9]\+\.[0-9]\+\.[0-9]\+\)/\1/p')
+
+                  # Update the version in package.json, and commit & tag the change:
+                  npm version $TAG_VERSION
+                  git push && git push --tags
+
+            - name: Publish to NPM
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+              run: npm publish

@@ -1,5 +1,0 @@
-uses: JS-DevTools/npm-publish@v1
-on: push
-with:
-package: ./package.json
-token: ${{ secrets.NPM_AUTH_TOKEN }}
