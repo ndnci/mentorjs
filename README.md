@@ -17,10 +17,10 @@ Download from ![](https://i.stack.imgur.com/gL9dG.png)
 Extract js and css
 ```html
 ...
-	<link rel="stylesheet" href="mentor.css">
+	<link rel="stylesheet" href="build/index.css">
 </head>
 ...
-	<script src="mentor.js"></script>
+	<script src="build/index.js"></script>
 </body>
 ```
 
@@ -64,7 +64,7 @@ new MentorJS().steps([
 		message: "Second message",
                 }]);
 ```
-###### With specific paremeters for each step
+###### With specific parameters for each step
 ```javascript
 new MentorJS().steps([
                 {
@@ -78,7 +78,7 @@ new MentorJS().steps([
 	   	message: "Without title !",
                 }]);
 ```
-###### With general paremeters
+###### With general parameters
 ```javascript
 new MentorJS({
 		theme: "dark",
@@ -146,7 +146,7 @@ new MentorJS({
 | vertical | top, center, bottom, auto | auto
 | responsive | true, false | true
 | wait | time ( ms ) | 0 | Wait time ( for actual modal ) when user click to next or previous button default is 0 for modal speed
-| events | javascript events | click | You can define events with space " " for listener function, for exemple : "click touchstart"
+| events | javascript events | click | You can define events with space " " for listener function, for example : "click touchstart"
 | mobileSupport | true, false | true
 
 ## Functions

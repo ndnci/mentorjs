@@ -1,8 +1,10 @@
+import "./css/App.scss"
+
 /**
  * MentorJS v1.0
  * https://github.com/ndnci/mentorjs
  *
- * Copyright (C) 2019 NDNCI - www.ndnci.com ( Ahliman HUSEYNOV )
+ * Copyright (C) 2019 NDNCI - www.ndnci.com
  */
 class MentorJS {
 
@@ -30,7 +32,7 @@ class MentorJS {
                 animation: null,
                 // area with background effect
                 backgroundArea: document.querySelector("body"),
-                // effect for backgroundarea when modal run
+                // effect for backgroundArea when modal run
                 backgroundEffectClass: "mentor-blur",
                 // effect on defined target when modal run
                 targetNoEffectClass: "mentor-noblur",
@@ -703,3 +705,5 @@ class MentorJS {
         }
     }
 }
+
+export default MentorJS;
