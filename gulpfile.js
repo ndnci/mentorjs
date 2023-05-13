@@ -51,6 +51,12 @@ function javascript() {
         .pipe(browserSync.stream());
 }
 
+// gulp build
+function build() {
+    style();
+    javascript();
+}
+
 // gulp watcher
 function watch() {
     browserSync.init({
@@ -71,6 +77,9 @@ gulp.task('default', () =>
     watch()
 );
 
+gulp.task('build', () => {});
+
 exports.style = style;
 exports.javascript = javascript;
 exports.watch = watch;
+exports.build = build;
