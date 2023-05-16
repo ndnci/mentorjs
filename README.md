@@ -17,10 +17,10 @@ Download from ![](https://i.stack.imgur.com/gL9dG.png)
 Extract js and css
 ```html
 ...
-	<link rel="stylesheet" href="build/index.css">
+	<link rel="stylesheet" href="build/index.min.css">
 </head>
 ...
-	<script src="build/index.js"></script>
+	<script src="build/index.min.js"></script>
 </body>
 ```
 
