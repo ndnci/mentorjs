@@ -32,7 +32,7 @@
     },
     "homepage": "https://github.com/ndnci/mentorjs#readme",
     "devDependencies": {
-        "@babel/core": "^7.21.8",
+        "@babel/core": "^7.24.3",
         "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
         "@svgr/webpack": "^8.0.1",
         "@testing-library/jest-dom": "^5.16.5",
