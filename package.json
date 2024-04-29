@@ -33,7 +33,7 @@
     "homepage": "https://github.com/ndnci/mentorjs#readme",
     "devDependencies": {
         "@babel/core": "^7.21.8",
-        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.13",
         "@svgr/webpack": "^8.0.1",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^14.0.0",
